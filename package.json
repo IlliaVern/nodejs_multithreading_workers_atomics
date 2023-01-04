@@ -1,0 +1,39 @@
+{
+  "name": "nodejs_multithreading_workers_atomics",
+  "version": "1.0.0",
+  "description": "Example of a concurrent prime number calculator in Node.js",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "prepare": "husky install",
+    "simple:worker": "node simple-worker",
+    "prime:naive": "node prime-naive",
+    "prime:shared-data": "node prime-shared-data",
+    "prime:thread-safe": "node prime-thread-safe"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IlliaVern/nodejs_multithreading_workers_atomics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IlliaVern/nodejs_multithreading_workers_atomics/issues"
+  },
+  "homepage": "https://github.com/IlliaVern/nodejs_multithreading_workers_atomics#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "prepare": "husky install",
+    "prettier": "^2.8.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "eslint --cache --fix"
+  }
+}
